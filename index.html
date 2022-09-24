@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="style.css">  
+  <title>Frontend Mentor | Interactive comments section</title>
+
+</head>
+<body>
+
+
+    <div class="comment">
+        <div class="range">
+          <img src="images/icon-plus.svg" alt="">
+          <p class="rangeNumber">12</p>
+          <img src="images/icon-minus.svg" alt="">
+      </div>
+      <div class="cardBody">
+        <div class="commentHead">
+          <div class="commentHeadPerson">
+            <img src="images/avatars/image-amyrobson.png" alt="">
+            <p class="name">amyrobson</p>
+            <p class="date">1month ago</p>
+          </div>
+          <div class="replyButton">
+            <img src="images/icon-reply.svg" alt="">
+            <p>Reply</p>
+          </div>
+        </div>
+        <div class="commentText">
+          Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.
+        </div>
+      </div>
+    </div>
+
+    <div class="comment">
+      <div class="range">
+        <img src="images/icon-plus.svg" alt="">
+        <p class="rangeNumber">5</p>
+        <img src="images/icon-minus.svg" alt="">
+      </div>
+      <div class="cardBody">
+        <div class="commentHead">
+          <div class="commentHeadPerson">
+            <img src="images/avatars/image-maxblagun.png" alt="">
+            <p class="name">maxblagun</p>
+            <p class="date">2 weeks ago</p>
+          </div>
+          <div class="replyButton">
+            <img src="images/icon-reply.svg" alt="">
+            <p>Reply</p>
+          </div>
+        </div>
+        <div class="commentText">
+          Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
+        </div>
+      </div>
+    </div>
+
+    <div class="repliesBody">
+
+      <div class="line"></div>
+
+      <div class="smallBody">
+        <div class="replies">
+          <div class="range">
+            <img src="images/icon-plus.svg" alt="">
+            <p class="rangeNumber">4</p>
+            <img src="images/icon-minus.svg" alt="">
+          </div>
+          <div class="cardBody">
+            <div class="commentHead">
+              <div class="commentHeadPerson">
+                <img src="images/avatars/image-ramsesmiron.png" alt="">
+                <p class="name">ramsesmiron</p>
+                <p class="date">1 week ago</p>
+              </div>
+              <div class="replyButton">
+                <img src="images/icon-reply.svg" alt="">
+                <p>Reply</p>
+              </div>
+            </div>
+            <div class="commentText">
+              <span class="replyTo">@maxblagun</span>If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.
+            </div>
+          </div>
+        </div>
+  
+        <div class="myReplies">
+          <div class="range">
+            <img src="images/icon-plus.svg" alt="">
+            <p class="rangeNumber">2</p>
+            <img src="images/icon-minus.svg" alt="">
+          </div>
+          <div class="cardBody">
+            <div class="commentHead">
+              <div class="commentHeadPerson">
+                <img src="images/avatars/image-juliusomo.png" alt="">
+                <p class="name">juliusomo</p>
+                <p class="date">2 days ago</p>
+              </div>
+              <div class="buttons">
+                <div class="deleteButton">
+                  <img src="images/icon-delete.svg" alt="">
+                  Delete
+                </div>
+                <div class="editButton">
+                  <img src="images/icon-edit.svg" alt="">
+                  Edit
+                </div>
+              </div>
+            </div>
+            <div class="commentText">
+              <span class="replyTo">@ramsesmiron</span>I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+    
+
+    
+
+    <div class="currentUser">
+      <img src="images/avatars/image-juliusomo.png" alt="">
+      <textarea placeholder="Add a comment..." class="input"></textarea>
+      <button class="sendButton">SEND</button>
+    </div>
+
+  
+  <script type="module" src="script.js"></script>
+</body>
+</html>
